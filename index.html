@@ -2,18 +2,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mirror Me!</title>
+    <title>Mirror Me by Ambassify!</title>
     <style>
         html, body, video {
             width: 100%;
-            height: 100%;
             overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: #293245;
+            color: white;
+            font-family: monospace;
+        }
+
+        video {
+            max-height: calc(100vh - 50px);
+            display: block;
+            transform: scaleX(-1);
+        }
+
+        a {
+            color: #00bd8d;
+        }
+
+        p {
+            text-align: right;
+            line-height: 16px;
+            font-size: 16px;
+            margin: 17px
+
+        }
+
+        #video_container {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            width: 30%;
+            top: 10px;
+            right: 10px;
+            filter: drop-shadow(5px 5px 15px #ffffff) drop-shadow(-5px -5px 15px #ffffff);
         }
     </style>
 </head>
 
 <body>
-    <video>
+    <div id="video_container">
+        <video></video>
+        <a href="https://www.ambassify.com" target="_blank" rel="noopener">
+            <img src="./logo.png" alt="Ambassify Logo" />
+        </a>
+    </div>
+    <p>Powered by Ambassify. <a href="https://ambssfy.notion.site/Job-Board-6ec53c03fcd94e318e68d98c08080d38" target="_blank" rel="noopener">
+        Looking for a job?
+    </a></p>
     <script src="./renderer.js"></script>
 </body>
 

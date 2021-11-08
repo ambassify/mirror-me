@@ -1,0 +1,33 @@
+{
+  "name": "mirror-me",
+  "version": "1.0.0",
+  "description": "Launch a mirror so you can quickly check your appearance and surroundings before meetings",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "bin": {
+    "mirror-me": "bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambassify/mirror-me.git"
+  },
+  "keywords": [
+    "mirror",
+    "meeting",
+    "webcam"
+  ],
+  "author": "Ambassify <dev@ambassify.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ambassify/mirror-me/issues"
+  },
+  "homepage": "https://github.com/ambassify/mirror-me#readme",
+  "dependencies": {
+    "electron": "^15.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
